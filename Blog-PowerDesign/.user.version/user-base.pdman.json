@@ -1,0 +1,353 @@
+{
+  "modules": [
+    {
+      "name": "BLOG",
+      "chnname": "博客数据库",
+      "entities": [
+        {
+          "title": "tb_user",
+          "fields": [
+            {
+              "name": "id",
+              "type": "BigInt",
+              "remark": "自增ID",
+              "chnname": "自增Id",
+              "pk": true,
+              "notNull": true,
+              "autoIncrement": true,
+              "uiHint": "Number"
+            },
+            {
+              "name": "nickname",
+              "type": "DefaultString",
+              "remark": "用户昵称",
+              "chnname": "用户昵称",
+              "uiHint": "",
+              "notNull": true
+            },
+            {
+              "name": "email",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "电子邮箱",
+              "notNull": true
+            },
+            {
+              "name": "iphone",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "手机号",
+              "notNull": false
+            },
+            {
+              "name": "password",
+              "type": "ShortString",
+              "remark": "",
+              "chnname": "密码",
+              "notNull": true
+            },
+            {
+              "name": "create_time",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "创建时间",
+              "notNull": true,
+              "defaultValue": ""
+            },
+            {
+              "name": "update_time",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "更新时间"
+            }
+          ],
+          "indexs": [],
+          "headers": [
+            {
+              "fieldName": "chnname",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "name",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "type",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "dataType",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "remark",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "pk",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "notNull",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "autoIncrement",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "defaultValue",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "relationNoShow",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "uiHint",
+              "relationNoShow": true
+            }
+          ],
+          "chnname": "用户信息表"
+        },
+        {
+          "title": "tb_user_detail",
+          "fields": [
+            {
+              "name": "id",
+              "type": "BigInt",
+              "remark": "",
+              "chnname": "自增ID",
+              "autoIncrement": true,
+              "pk": true,
+              "notNull": true
+            },
+            {
+              "name": "user_id",
+              "type": "BigInt",
+              "remark": "",
+              "chnname": "用户ID",
+              "notNull": true
+            },
+            {
+              "name": "sex",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "用户性别"
+            },
+            {
+              "name": "user_porfile",
+              "type": "MiddleString",
+              "remark": "",
+              "chnname": "用户简介"
+            },
+            {
+              "name": "create_time",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "创建时间",
+              "notNull": true
+            },
+            {
+              "name": "update_time",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "更新时间"
+            }
+          ],
+          "indexs": [],
+          "headers": [
+            {
+              "fieldName": "chnname",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "name",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "type",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "dataType",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "remark",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "pk",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "notNull",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "autoIncrement",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "defaultValue",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "relationNoShow",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "uiHint",
+              "relationNoShow": true
+            }
+          ],
+          "chnname": "用户详细信息"
+        },
+        {
+          "title": "tb_user_config",
+          "fields": [
+            {
+              "name": "id",
+              "type": "BigInt",
+              "remark": "",
+              "chnname": "自增ID",
+              "autoIncrement": true,
+              "pk": true,
+              "notNull": true
+            },
+            {
+              "name": "user_id",
+              "type": "BigInt",
+              "remark": "",
+              "chnname": "用户ID",
+              "notNull": true
+            },
+            {
+              "name": "editor_type",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "常用编辑器类型",
+              "defaultValue": "0"
+            },
+            {
+              "name": "language_type",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "语言种类",
+              "defaultValue": "0"
+            },
+            {
+              "name": "receive_type",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "接收谁的博客信息类型",
+              "defaultValue": "0"
+            },
+            {
+              "name": "remind_type",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "提醒邮件通知类型",
+              "defaultValue": "0"
+            },
+            {
+              "name": "create_time",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "创建时间",
+              "notNull": true
+            },
+            {
+              "name": "update_time",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "更新时间"
+            }
+          ],
+          "indexs": [],
+          "headers": [
+            {
+              "fieldName": "chnname",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "name",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "type",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "dataType",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "remark",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "pk",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "notNull",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "autoIncrement",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "defaultValue",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "relationNoShow",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "uiHint",
+              "relationNoShow": true
+            }
+          ],
+          "chnname": "用户配置表"
+        }
+      ],
+      "graphCanvas": {
+        "nodes": [
+          {
+            "shape": "table",
+            "title": "tb_user",
+            "moduleName": false,
+            "x": 270,
+            "y": 140,
+            "id": "c3e637d1"
+          },
+          {
+            "shape": "table",
+            "title": "tb_user_config",
+            "moduleName": false,
+            "x": 600,
+            "y": 150,
+            "id": "beffa131"
+          },
+          {
+            "shape": "table",
+            "title": "tb_user_detail",
+            "moduleName": false,
+            "x": 270,
+            "y": 360,
+            "id": "ca281e52"
+          }
+        ],
+        "edges": []
+      },
+      "associations": []
+    }
+  ],
+  "version": "1.0",
+  "message": "Blog",
+  "date": "2020/5/18 15:40:5"
+}
