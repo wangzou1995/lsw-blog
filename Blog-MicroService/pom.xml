@@ -19,6 +19,13 @@
         <spring.cloud.version>Greenwich.SR3</spring.cloud.version>
         <fastjson.version>1.2.62</fastjson.version>
     </properties>
+    
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+    </dependencies>
     <!-- 依赖声明 -->
     <dependencyManagement>
         <dependencies>
@@ -76,4 +83,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
