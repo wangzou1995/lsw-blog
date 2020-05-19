@@ -1,0 +1,12 @@
+Index: Blog-MicroService/blog-user/.settings/org.eclipse.m2e.core.prefs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Blog-MicroService/blog-user/.settings/org.eclipse.m2e.core.prefs	(date 1589869274389)
++++ Blog-MicroService/blog-user/.settings/org.eclipse.m2e.core.prefs	(date 1589869274389)
+@@ -0,0 +1,4 @@
++activeProfiles=
++eclipse.preferences.version=1
++resolveWorkspaceProjects=true
++version=1

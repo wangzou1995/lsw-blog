@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="blog-user" />
+        <module name="eureka-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Blog-MicroService" target="1.8" />
       <module name="blog-user" target="1.8" />
+      <module name="eureka-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

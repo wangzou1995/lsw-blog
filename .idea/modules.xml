@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Blog-MicroService/Blog-MicroService.iml" filepath="$PROJECT_DIR$/Blog-MicroService/Blog-MicroService.iml" />
       <module fileurl="file://$PROJECT_DIR$/Blog-MicroService/blog-user/blog-user.iml" filepath="$PROJECT_DIR$/Blog-MicroService/blog-user/blog-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Blog-MicroService/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/Blog-MicroService/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/lsw-blog.iml" filepath="$PROJECT_DIR$/.idea/lsw-blog.iml" />
     </modules>
   </component>
