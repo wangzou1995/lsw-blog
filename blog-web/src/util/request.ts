@@ -3,8 +3,7 @@ import axios from 'axios'
 const service = axios.create({
   baseURL: '',
   timeout: 15000 // 请求超时时间
-});
-
+})
 
 // http request 请求拦截器，有token值则配置上token值
 // service.interceptors.request.use(
@@ -20,7 +19,7 @@ const service = axios.create({
 
 service.interceptors.response.use(
   function (response) {
-    //请求正常则返回
+    // 请求正常则返回
     return Promise.resolve(response)
   },
   function (error) {
@@ -33,6 +32,6 @@ service.interceptors.response.use(
     // store.commit('ON_HTTP_ERROR', httpError)
     return Promise.reject(error)
   }
-);
+)
 
 export default service
