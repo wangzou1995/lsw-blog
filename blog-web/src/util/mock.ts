@@ -11,8 +11,8 @@ let configArray:  { [key: string]: any } [] = [];
 // 使用webpack的require.context()遍历所有mock文件
 let notMockFolderFiles: __WebpackModuleApi.RequireContext,
   mockFolderFiles:__WebpackModuleApi.RequireContext;
-mockFolderFiles = require.context('../../src/mock', true, /\.ts$/);
-notMockFolderFiles = require.context('../../src', true, /_mock.ts$/);
+mockFolderFiles = require.context('@/mock', true, /\.ts$/);
+notMockFolderFiles = require.context('@/', true, /_mock.ts$/);
 mockFolderFiles.keys().forEach((key) => {
   if (key === './index.ts') return;
   configArray = configArray.concat(mockFolderFiles(key).default);
