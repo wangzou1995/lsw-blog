@@ -1,7 +1,8 @@
 
 <template>
   <div class="logo-wrapper">
-    <el-image fit="fill" style="width:100%;height:50px;" src="./src/assets/BLOG.png"/>
+<!--    <el-image fit="fill" style="width:100%;height:50px;" src=""/>-->
+<!--    <img src="./src/assets/BLOG.png" alt="xx" />-->
   </div>
 </template>
 

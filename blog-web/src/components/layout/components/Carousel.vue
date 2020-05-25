@@ -1,7 +1,7 @@
 <template>
   <el-carousel class="carouselClass" height="270px" >
-    <el-carousel-item v-for="item in images" :key="item">
-      <el-image style="height: 270px ; width: 100%" fit="fill" :src="item" />
+    <el-carousel-item v-for="(item,index) in images" :key="index">
+      <el-image  style="height: 270px ; width: 100%" fit="fill" :src="item" />
     </el-carousel-item>
   </el-carousel>
 </template>

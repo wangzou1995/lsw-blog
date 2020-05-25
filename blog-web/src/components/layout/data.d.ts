@@ -9,3 +9,13 @@ export interface User {
   username?: string;
   avatar?: string;
 }
+
+export interface Card {
+  id?: string;
+  userId?: string;
+  title?: string;
+  content?: string;
+  images?: string[];
+  like?: number;
+  messages?: number;
+}
