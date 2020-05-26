@@ -1,16 +1,16 @@
 <template>
-  <el-card class="card" style="border-radius: 12px">
+  <el-card class="card" style="border-radius: 12px; height: 300px; min-width: 500px">
     <div class="header">
       <div slot="header">
         <a href="www.baidu.com">{{card.title}}</a>
       </div>
     </div>
     <div class="cardContent">
-      <div class="cardLeft">
+      <div class="cardLeft" :style="{width : card.images && card.images.length > 0 ?  '68%' : '100%'}">
         {{card.content}}
       </div>
       <div v-if="card.images && card.images.length > 0" class="cardRight">
-        <el-image :src="card.images[0]"/>
+        <el-image style="height: 160px;" fit="scale-down" :src="card.images[0]"/>
       </div>
     </div>
     <div class="cardFooter">
@@ -46,12 +46,15 @@ export default class BaseCard extends Vue {
   .cardRight{
     float: left;
     width: 30%;
+    height: 160px;
   }
   }
   .header {
     text-align: left;
     font-size: 18px;
     font-weight: 600;
+    height: 60px;
+    line-height: 60px;
     a {
       color: black;
       text-decoration: none;
@@ -62,13 +65,18 @@ export default class BaseCard extends Vue {
     text-align: left;
     font-size: 14px;
     color: darkgrey;
-    height: 150px;
+    height: 160px;
+    width: 100%;
+    line-height: 60px;
   }
   .cardFooter{
-    height: 30px;
+    height: 10px;
     text-align: left;
     /*padding-left: 40px;*/
     color: darkgrey;
+    width: 100%;
+    line-height: 10px;
+    margin-top: 5px;
     .el-button {
       color: darkgrey;
     }

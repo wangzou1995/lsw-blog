@@ -48,7 +48,6 @@ import {
   Col,
   Upload,
   Progress,
-  Spinner,
   Badge,
   Card,
   Rate,
@@ -74,7 +73,6 @@ import {
   Calendar,
   Backtop,
   PageHeader,
-  CascaderPanel,
   Loading,
   MessageBox,
   Message,
@@ -127,7 +125,6 @@ Vue.use(Row);
 Vue.use(Col);
 Vue.use(Upload);
 Vue.use(Progress);
-Vue.use(Spinner);
 Vue.use(Badge);
 Vue.use(Card);
 Vue.use(Rate);
@@ -153,7 +150,6 @@ Vue.use(Image);
 Vue.use(Calendar);
 Vue.use(Backtop);
 Vue.use(PageHeader);
-Vue.use(CascaderPanel);
 Vue.use(Avatar);
 Vue.use(Loading.directive);
 Vue.prototype.$loading = Loading.service

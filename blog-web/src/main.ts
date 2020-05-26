@@ -5,7 +5,7 @@ import router from './router'
 import store from './store'
 import '@/util/mock'
 import '@/plugins/element'
-
+import '@/plugins/antd'
 Vue.config.productionTip = false;
 
 new Vue({
